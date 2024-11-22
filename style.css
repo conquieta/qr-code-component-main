@@ -1,0 +1,227 @@
+/* css reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* style */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(212, 45%, 89%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7rem;
+}
+
+.container {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  max-width: 20rem;
+  height: 100%;
+}
+
+.image-container {
+  width: 100%;
+}
+
+.image-container img {
+  object-fit: cover;
+  border-radius: 1rem;
+  height: 300px;
+  width: 100%;
+}
+
+h2 {
+  color: hsl(218, 44%, 22%);
+  font-weight: 700;
+  text-align: center;
+  margin-block-start: 1rem;
+  font-size: 1.6rem;
+}
+
+p {
+  color: hsl(216, 15%, 48%);
+  text-align: center;
+  margin-block-start: 1rem;
+  font-size: 1.2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    padding: 1rem;
+  }
+
+  .container {
+    max-width: 18rem;
+  }
+
+  .image-container img {
+    height: 250px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    margin-block-start: 1.2rem;
+    padding: 0 0.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    padding: 0 1rem;
+    margin-block-end: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  body {
+    padding: 3rem;
+  }
+
+  .container {
+    max-width: 19rem;
+  }
+
+  .image-container img {
+    height: 275px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+}
